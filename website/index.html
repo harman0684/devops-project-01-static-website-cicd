@@ -2,123 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>DevOps Project | Static Website</title>
+    <title>Welcome | Travel with Harman</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
         body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            height: 100vh;
+            background: linear-gradient(
+                rgba(0, 0, 0, 0.45),
+                rgba(0, 0, 0, 0.45)
+            ),
+            url("https://images.unsplash.com/photo-1501785888041-af3ef285b470") no-repeat center center/cover;
             color: #ffffff;
-        }
-
-        header {
-            padding: 20px;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-
-        header p {
-            font-size: 16px;
-            opacity: 0.9;
-        }
-
-        .container {
-            padding: 60px 20px;
-            text-align: center;
-        }
-
-        .container h2 {
-            font-size: 30px;
-            margin-bottom: 15px;
-        }
-
-        .container p {
-            font-size: 18px;
-            max-width: 700px;
-            margin: auto;
-            line-height: 1.6;
-            opacity: 0.95;
-        }
-
-        .features {
             display: flex;
+            align-items: center;
             justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 40px;
+            text-align: center;
         }
 
-        .feature-box {
-            background-color: rgba(255, 255, 255, 0.1);
-            margin: 15px;
-            padding: 25px;
-            border-radius: 10px;
-            width: 250px;
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 50px 40px;
+            border-radius: 16px;
+            backdrop-filter: blur(8px);
+            max-width: 600px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
         }
 
-        .feature-box h3 {
-            margin-top: 0;
+        .card h1 {
+            font-size: 42px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .card h1 span {
             color: #00eaff;
         }
 
-        footer {
-            margin-top: 60px;
-            padding: 15px;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.3);
+        .card p {
+            font-size: 18px;
+            line-height: 1.7;
+            opacity: 0.95;
+            margin-bottom: 30px;
+        }
+
+        .tagline {
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            opacity: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            margin-top: 25px;
             font-size: 14px;
             opacity: 0.8;
+        }
+
+        .footer span {
+            color: #00eaff;
+        }
+
+        @media (max-width: 600px) {
+            .card h1 {
+                font-size: 32px;
+            }
+
+            .card p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>🚀 DevOps Static Website</h1>
-    <p>Hosted & Deployed using CI/CD</p>
-</header>
+    <div class="card">
+        <div class="tagline">Travel • Nature • Peace</div>
 
-<div class="container">
-    <h2>Welcome!</h2>
+        <h1>Welcome by <span>Harman</span></h1>
 
+        <p>
+            I hope you like this page 🌿  
+            Inspired by mountains, rivers, and the beauty of travel,
+            this website is created to bring calm, inspiration,
+            and a sense of adventure.
+        </p>
 
-    <p><strong>Version 2 – Deployed via GitHub Actions</strong></p>
+        <p>
+            Built with passion, deployed using CI/CD,
+            and hosted on the cloud — where technology meets nature.
+        </p>
 
-    
-    <p>
-        This is a static website created as part of a DevOps hands-on project.
-        The goal is to demonstrate Git, CI/CD pipelines, and automated deployment
-        using modern DevOps tools.
-    </p>
-
-    <div class="features">
-        <div class="feature-box">
-            <h3>Git & GitHub</h3>
-            <p>Version control with clean commit history and best practices.</p>
-        </div>
-
-        <div class="feature-box">
-            <h3>CI/CD Pipeline</h3>
-            <p>Automated build and deployment using GitHub Actions.</p>
-        </div>
-
-        <div class="feature-box">
-            <h3>Cloud Hosting</h3>
-            <p>Deployed on cloud infrastructure for real-world usage.</p>
+        <div class="footer">
+            © 2026 | Travel Website Demo • Built by <span>Harman</span>
         </div>
     </div>
-</div>
-
-<footer>
-    © 2026 DevOps Project | Built with ❤️ for Learning & Interviews
-</footer>
 
 </body>
 </html>
