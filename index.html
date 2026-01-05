@@ -1,10 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DevOps CI/CD Project</title>
+    <meta charset="UTF-8">
+    <title>DevOps Project | Static Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: #ffffff;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+
+        .container {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .container h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .container p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 15px;
+            padding: 25px;
+            border-radius: 10px;
+            width: 250px;
+        }
+
+        .feature-box h3 {
+            margin-top: 0;
+            color: #00eaff;
+        }
+
+        footer {
+            margin-top: 60px;
+            padding: 15px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            font-size: 14px;
+            opacity: 0.8;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>DevOps Project 1</h1>
-    <p>This website is deployed automatically using CI/CD</p>
+
+<header>
+    <h1>🚀 DevOps Static Website</h1>
+    <p>Hosted & Deployed using CI/CD</p>
+</header>
+
+<div class="container">
+    <h2>Welcome!</h2>
+    <p>
+        This is a static website created as part of a DevOps hands-on project.
+        The goal is to demonstrate Git, CI/CD pipelines, and automated deployment
+        using modern DevOps tools.
+    </p>
+
+    <div class="features">
+        <div class="feature-box">
+            <h3>Git & GitHub</h3>
+            <p>Version control with clean commit history and best practices.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>CI/CD Pipeline</h3>
+            <p>Automated build and deployment using GitHub Actions.</p>
+        </div>
+
+        <div class="feature-box">
+            <h3>Cloud Hosting</h3>
+            <p>Deployed on cloud infrastructure for real-world usage.</p>
+        </div>
+    </div>
+</div>
+
+<footer>
+    © 2026 DevOps Project | Built with ❤️ for Learning & Interviews
+</footer>
+
 </body>
 </html>
